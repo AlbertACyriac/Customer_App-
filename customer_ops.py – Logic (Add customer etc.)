@@ -1,11 +1,17 @@
-from data import customers
-from validation import is_valid_email
+from validation import is_valid_email, is_valid_phone
 
 def add_customer():
     name = input("Enter name: ")
     email = input("Enter email: ")
     phone = input("Enter phone number: ")
+
+    if not is_valid_email(email):
+        print("Invalid email format.")
+        return
+
+    if not is_valid_phone(phone):
+        print("Invalid phone number. Must be 10 digits.")
+        return
+
     customer_data.append({"name": name, "email": email, "phone": phone})
     print("Customer added successfully.")
-    else:
-        print("Invalid email.")
