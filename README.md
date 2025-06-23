@@ -45,7 +45,7 @@ python -m unittest discover customer_app/tests
 ```markdown
 ## Author
 
-Albert A Cyriac  
+Albert Cyriac  
 Level 5 Digital & Technology Solutions Degree Apprentice  
 
 
