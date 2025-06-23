@@ -14,3 +14,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+from customer_ops import add_customer
+
+customers = []
+
+# Sample test
+add_customer(customers, "John Doe", "john@example.com", "+441234567890")  #  Valid
+add_customer(customers, "Jane Smith", "invalid_email", "123456")          #  Invalid
