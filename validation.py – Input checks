@@ -6,3 +6,7 @@ def is_valid_email(email):
         return True
     except EmailNotValidError:
         return False
+
+def is_valid_phone(phone):
+    # Accepts only 10-digit numeric phone numbers
+    return phone.isdigit() and len(phone) == 10
